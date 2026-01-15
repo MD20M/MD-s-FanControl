@@ -236,13 +236,13 @@ class NotificationManager(Vertical, Notifier):
                 self.notification_states[notif_id] = True
                 
                 if notif["type"] == "info":
-                    self.notifier.send_info("MD NotifManager", notif["message"])
+                    self.notifier.send_info("MD's FanControl", notif["message"])
                 elif notif["type"] == "warning":
-                    self.notifier.send_warning("MD NotifManager", notif["message"])
+                    self.notifier.send_warning("MD's FanControl", notif["message"])
                 elif notif["type"] == "error":
-                    self.notifier.send_error("MD NotifManager", notif["message"])
+                    self.notifier.send_error("MD's FanControl", notif["message"])
                 elif notif["type"] == "critical":
-                    self.notifier.send_critical("MD NotifManager", notif["message"])
+                    self.notifier.send_critical("MD's FanControl", notif["message"])
             
             # Reset state when value drops 10% below threshold
             elif current_value is not None and current_value < reset_threshold and self.notification_states.get(notif_id, False):
