@@ -1,3 +1,4 @@
+![OS support](https://img.shields.io/badge/OS-Linux-green) [![Supported Python Versions](https://img.shields.io/pypi/pyversions/textual)](https://pypi.org/project/textual/)
 # MD's FanControl - Simple Linux System Monitor & Fan Controller
 
 A terminal user interface (TUI) application for monitoring system resources and controlling PWM fans on Linux systems. Built with [Textual](https://github.com/Textualize/textual) for a modern, responsive interface in the terminal.
@@ -10,6 +11,7 @@ A terminal user interface (TUI) application for monitoring system resources and 
   - Temperature, power, usage, and memory statistics
 - **RAM Monitoring**: Memory usage and temperature (when available)
 - **Real-time Graphs**: Interactive plotext-based graphs with multiple views per component
+<img width="1051" height="863" alt="image" src="https://github.com/user-attachments/assets/1686e6d7-5516-45bd-9de4-1ddf3814ae58" />   
 
 ### 🌡️ Fan Control
 - **Automatic Fan Detection**: Discovers all PWM-capable fans via hwmon
@@ -19,6 +21,7 @@ A terminal user interface (TUI) application for monitoring system resources and 
   - **Graph**: Apply custom fan curves based on system stats
 - **Per-Fan Configuration**: Individual control for each detected fan
 - **Real-time RPM & Speed Monitoring**
+<img width="1451" height="1063" alt="image" src="https://github.com/user-attachments/assets/398c93d4-d08c-4684-8b1c-fdbad9f9d4b4" />  
 
 ### 📈 Custom Fan Curves
 - **Graph Editor**: Create custom fan curves with unlimited data points
@@ -28,6 +31,8 @@ A terminal user interface (TUI) application for monitoring system resources and 
   - RAM Usage or Temperature
 - **Interpolation**: Smooth fan speed transitions between curve points
 - **Persistent Storage**: Curves saved to `graphs.json`
+<img width="1451" height="1063" alt="image" src="https://github.com/user-attachments/assets/b8ab6b48-c2a1-4888-828d-e8102d0bee14" />
+
 
 ### 🔔 Notifications
 - **Threshold Alerts**: Desktop notifications when stats exceed limits
@@ -54,7 +59,7 @@ pynvml>=11.5.0  # For NVIDIA GPU support
 dbus-python>=1.3.2  # For notifications
 ```
 
-## Instalation
+## Installation
 **1. Clone the repository:** 
 ```git clone <your-repo-url>
 cd <project-directory>
